@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+   .bordernav{
+      @apply border-b-slate-700 border-b-[0.5px]
+   }
+}
+
 .header {
    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url("/images/netlix-header.jpg") center center no-repeat;

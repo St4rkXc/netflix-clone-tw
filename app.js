@@ -1,3 +1,17 @@
+function userScroll() {
+   const navbar = document.querySelector(".mynav");
+   window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+         navbar.classList.add("bg-black");
+         navbar.classList.add("bordernav");
+      } else {
+         navbar.classList.remove("bordernav");
+         navbar.classList.remove("bg-black");
+      }
+   });
+}
+document.addEventListener("DOMContentLoaded", userScroll);
+
 let swiperCards = new Swiper(".card-content", {
    loop: true,
    spaceBetween: 32,
