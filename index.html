@@ -1,12 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-   
-</body>
+<html lang="en" data-theme="mytheme">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="/css/style.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+   </head>
+   <body>
+      <nav class="fixed w-screen z-40 my-navbar duration-500">
+         <div class="navbar bg-transparent container mx-auto w-screen">
+            <div class="navbar-start">
+               <img src="images/logo-netf;ix.png" class="w-32" alt="" />
+            </div>
+            <div class="navbar-end flex space-x-3">
+               <details class="dropdown hidden lg:block">
+                  <summary
+                     class="btn m-1 px-4 py-2 border border-white/50 bg-transparent text-white"
+                  >
+                     <i class="fa-solid fa-language"></i> Bahasa Indonesia
+                  </summary>
+                  <ul
+                     class="menu dropdown-content bg-white rounded-lg z-[1] w-52 p-2 shadow"
+                  >
+                     <li class="group group-hover:bg-black">
+                        <a
+                           class="group-hover:text-white text-slate-900 group-hover:bg-black/60"
+                           >Bahasa Indonesia</a
+                        >
+                     </li>
+                     <li class="group group-hover:bg-black">
+                        <a
+                           class="group-hover:text-white text-slate-900 group-hover:bg-black/60"
+                           >Bahasa Inggris</a
+                        >
+                     </li>
+                  </ul>
+               </details>
+               <div class="btn btn-primary hidden lg:flex">Masuk</div>
+               <div class="dropdown dropdown-end">
+                  <div
+                     tabindex="0"
+                     role="button"
+                     class="btn btn-primary text-text lg:hidden"
+                  >
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                     >
+                        <path
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           stroke-width="2"
+                           d="M4 6h16M4 12h8m-8 6h16"
+                        />
+                     </svg>
+                  </div>
+                  <ul
+                     tabindex="0"
+                     class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-72 bg-text p-2 shadow-xl border border-white/20 space-y-2"
+                  >
+                     <li>
+                        <details class="dropdown">
+                           <summary
+                              class="btn m-1 px-4 py-2 border border-white/50 bg-transparent text-white flex justify-center items-center"
+                           >
+                              <i class="fa-solid fa-language"></i> Bahasa
+                              Indonesia
+                           </summary>
+                           <ul
+                              class="menu dropdown-content bg-white rounded-lg z-[1] w-52 p-2 shadow"
+                           >
+                              <li class="group group-hover:bg-black">
+                                 <a
+                                    class="group-hover:text-white text-slate-900 group-hover:bg-black/60"
+                                    >Bahasa Indonesia</a
+                                 >
+                              </li>
+                              <li class="group group-hover:bg-black">
+                                 <a
+                                    class="group-hover:text-white text-slate-900 group-hover:bg-black/60"
+                                    >Bahasa Inggris</a
+                                 >
+                              </li>
+                           </ul>
+                        </details>
+                     </li>
+                     <li>
+                        <div class="btn btn-primary">Masuk</div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <header class="header h-screen flex justify-center items-center">
+         <div>
+            <div class="text-center space-y-6">
+               <p
+                  class="text-6xl font-black text-white w-3/4 text-center mx-auto"
+               >
+                  Unlimited movies, TV shows, and more
+               </p>
+               <p class="text-white text-lg font-semibold">
+                  Starts at IDR 54,000. Cancel anytime.
+               </p>
+            </div>
+            <div class="mt-6 text-center">
+               <p class="text-base text-white/80">
+                  Ready to watch? Enter your email to create or restart your
+                  membership.
+               </p>
+               <div class="flex justify-center mt-4 space-x-4">
+                  <input
+                     type="text"
+                     class="border border-white/50 rounded-md px-4 py-4 w-96"
+                     placeholder="Email Address"
+                  />
+                  <div class="btn btn-primary p-5 h-full">Get Started</div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <!-- * Watch Now Section -->
+      <section class="container mx-auto my-[100px]" id="watch">
+         <p class="text-3xl text-white font-semibold">Trending Now</p>
+         <div class="swiper card-container mt-5">
+            <div class="card-content pb-12">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide article-card">
+                     <img src="images/card-1.webp" class="w-full rounded-xl" alt="">
+                  </div>
+                  <div class="swiper-slide article-card">
+                     <img src="images/card-2.webp" class="w-full rounded-xl" alt="">
+                  </div>
+                  <div class="swiper-slide article-card">
+                     <img src="images/card-3.webp" class="w-full rounded-xl" alt="">
+                  </div>
+                  <div class="swiper-slide article-card">
+                     <img src="images/card-5.webp" class="w-full rounded-xl" alt="">
+                  </div>
+                  <div class="swiper-slide article-card">
+                     <img src="images/card-6.webp" class="w-full rounded-xl" alt="">
+                  </div>
+                  <div class="swiper-slide article-card">
+                     <img src="images/card-7.webp" class="w-full rounded-xl" alt="">
+                  </div>
+                  <div class="swiper-slide article-card">
+                     <img src="images/card-8.webp" class="w-full rounded-xl" alt="">
+                  </div>
+                  <div class="swiper-slide article-card">
+                     <img src="images/card-9.webp" class="w-full rounded-xl" alt="">
+                  </div>
+                  <div class="swiper-slide article-card">
+                     <img src="images/card-10.webp" class="w-full rounded-xl" alt="">
+                  </div>
+                  
+               </div>
+               <div class="swiper-scrollbar"></div>
+            </div>
+         </div>
+      </section>
+
+      <section id="reason" class="container mx-auto">
+         <p class="text-3xl text-white font-semibold">Trending Now</p>
+         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-5 gap-4">
+            <div class="p-8 rounded-xl w-full flex flex-col justify-between gap-4 h-fit xl:h-[330px]" style="background: linear-gradient(169deg, rgba(15,176,254,0.25253851540616246) 0%, rgba(255,0,0,0.18531162464985995) 100%);">
+               <div class="space-y-4">
+                  <p class="text-2xl text-white font-semibold">Enjoy Your TV</p>
+                  <p class="text-sm text-white/60 font-base">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+               </div>
+               <div class="flex justify-end">
+                  <i class="fas fa-tv fa-3x ms-auto"></i>
+               </div>
+            </div>
+            <div class="p-8 rounded-xl w-full flex flex-col justify-between gap-4 h-fit xl:h-[330px]" style="background: linear-gradient(169deg, rgba(15,176,254,0.25253851540616246) 0%, rgba(255,0,0,0.18531162464985995) 100%);">
+               <div class="space-y-4">
+                  <p class="text-2xl text-white font-semibold">Download your shows to watch offline</p>
+                  <p class="text-sm text-white/60 font-base">Save your favorites easily and always have something to watch.</p>
+               </div>
+               <div class="flex justify-end">
+                  <i class="fas fa-download fa-3x ms-auto"></i>
+               </div>
+            </div>
+            <div class="p-8 rounded-xl w-full flex flex-col justify-between gap-4 h-fit xl:h-[330px]" style="background: linear-gradient(169deg, rgba(15,176,254,0.25253851540616246) 0%, rgba(255,0,0,0.18531162464985995) 100%);">
+               <div class="space-y-4">
+                  <p class="text-2xl text-white font-semibold">Watch everywhere</p>
+                  <p class="text-sm text-white/60 font-base">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+               </div>
+               <div class="flex justify-end">
+                  <i class="fas fa-play fa-3x ms-auto"></i>
+               </div>
+            </div>
+            <div class="p-8 rounded-xl w-full flex flex-col justify-between gap-4 h-fit xl:h-[330px]" style="background: linear-gradient(169deg, rgba(15,176,254,0.25253851540616246) 0%, rgba(255,0,0,0.18531162464985995) 100%);">
+               <div class="space-y-4">
+                  <p class="text-2xl text-white font-semibold">Create profiles for kids</p>
+                  <p class="text-sm text-white/60 font-base">Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+               </div>
+               <div class="flex justify-end">
+                  <i class="fas fa-child fa-3x ms-auto"></i>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="app.js"></script>
+   </body>
 </html>
