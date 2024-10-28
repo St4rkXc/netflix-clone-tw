@@ -2467,6 +2467,10 @@ details.collapse summary::-webkit-details-marker {
     width: 24rem;
   }
 
+  .md\:w-3\/4 {
+    width: 75%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
