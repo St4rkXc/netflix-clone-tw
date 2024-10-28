@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="mytheme">
+
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Netflix</title>
         <link rel="stylesheet" href="/css/style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
+
     <body>
         <nav class="fixed w-screen z-40 my-navbar duration-500 mynav">
             <div class="navbar bg-transparent container mx-auto w-screen">
@@ -25,26 +19,18 @@
                 </div>
                 <div class="navbar-end flex space-x-3">
                     <details class="dropdown hidden lg:block">
-                        <summary
-                            class="btn m-1 px-4 py-2 border border-white/50 bg-transparent text-white"
-                        >
+                        <summary class="btn m-1 px-4 py-2 border border-white/50 bg-transparent text-white">
                             <i class="fa-solid fa-language"></i>
                             Bahasa Indonesia
                         </summary>
-                        <ul
-                            class="menu dropdown-content bg-white rounded-lg z-[1] w-52 p-2 shadow"
-                        >
+                        <ul class="menu dropdown-content bg-white rounded-lg z-[1] w-52 p-2 shadow">
                             <li class="group group-hover:bg-black">
-                                <a
-                                    class="group-hover:text-white text-slate-900 group-hover:bg-black/60"
-                                >
+                                <a class="group-hover:text-white text-slate-900 group-hover:bg-black/60">
                                     Bahasa Indonesia
                                 </a>
                             </li>
                             <li class="group group-hover:bg-black">
-                                <a
-                                    class="group-hover:text-white text-slate-900 group-hover:bg-black/60"
-                                >
+                                <a class="group-hover:text-white text-slate-900 group-hover:bg-black/60">
                                     Bahasa Inggris
                                 </a>
                             </li>
@@ -52,52 +38,26 @@
                     </details>
                     <div class="btn btn-primary hidden lg:flex">Masuk</div>
                     <div class="dropdown dropdown-end">
-                        <div
-                            tabindex="0"
-                            role="button"
-                            class="btn btn-primary text-text lg:hidden"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16"
-                                />
+                        <div tabindex="0" role="button" class="btn btn-primary text-text lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
-                        <ul
-                            tabindex="0"
-                            class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-72 bg-text p-2 shadow-xl border border-white/20 space-y-2"
-                        >
+                        <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-72 bg-text p-2 shadow-xl border border-white/20 space-y-2">
                             <li>
                                 <details class="dropdown">
-                                    <summary
-                                        class="btn m-1 px-4 py-2 border border-white/50 bg-transparent text-white flex justify-center items-center"
-                                    >
+                                    <summary class="btn m-1 px-4 py-2 border border-white/50 bg-transparent text-white flex justify-center items-center">
                                         <i class="fa-solid fa-language"></i>
                                         Bahasa Indonesia
                                     </summary>
-                                    <ul
-                                        class="menu dropdown-content bg-white rounded-lg z-[1] w-52 p-2 shadow"
-                                    >
+                                    <ul class="menu dropdown-content bg-white rounded-lg z-[1] w-52 p-2 shadow">
                                         <li class="group group-hover:bg-black">
-                                            <a
-                                                class="group-hover:text-white text-slate-900 group-hover:bg-black/60"
-                                            >
+                                            <a class="group-hover:text-white text-slate-900 group-hover:bg-black/60">
                                                 Bahasa Indonesia
                                             </a>
                                         </li>
                                         <li class="group group-hover:bg-black">
-                                            <a
-                                                class="group-hover:text-white text-slate-900 group-hover:bg-black/60"
-                                            >
+                                            <a class="group-hover:text-white text-slate-900 group-hover:bg-black/60">
                                                 Bahasa Inggris
                                             </a>
                                         </li>
@@ -115,9 +75,7 @@
         <header class="header h-screen flex justify-center items-center">
             <div class="container mx-auto">
                 <div class="text-center space-y-6">
-                    <p
-                        class="text-3xl md:text-6xl font-black text-white w-full md:w-3/4 text-center mx-auto"
-                    >
+                    <p class="text-3xl md:text-6xl font-black text-white w-full md:w-3/4 text-center mx-auto">
                         Unlimited movies, TV shows, and more
                     </p>
                     <p class="text-white text-base md:text-lg font-semibold">
@@ -129,14 +87,8 @@
                         Ready to watch? Enter your email to create or restart
                         your membership.
                     </p>
-                    <div
-                        class="flex flex-col md:flex-row justify-center mt-4 space-x-0 md:space-x-4 space-y-4 md:space-y-0"
-                    >
-                        <input
-                            type="text"
-                            class="border border-white/50 rounded-md px-4 py-4 w-full md:w-96"
-                            placeholder="Email Address"
-                        />
+                    <div class="flex flex-col md:flex-row justify-center mt-4 space-x-0 md:space-x-4 space-y-4 md:space-y-0">
+                        <input type="text" class="border border-white/50 rounded-md px-4 py-4 w-full md:w-96" placeholder="Email Address" />
                         <div class="btn btn-primary p-5 h-full">
                             Get Started
                         </div>
@@ -154,67 +106,31 @@
                 <div class="card-content pb-12">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide article-card">
-                            <img
-                                src="images/card-1.webp"
-                                class="w-full rounded-xl"
-                                alt=""
-                            />
+                            <img src="images/card-1.webp" class="w-full rounded-xl" alt="" />
                         </div>
                         <div class="swiper-slide article-card">
-                            <img
-                                src="images/card-2.webp"
-                                class="w-full rounded-xl"
-                                alt=""
-                            />
+                            <img src="images/card-2.webp" class="w-full rounded-xl" alt="" />
                         </div>
                         <div class="swiper-slide article-card">
-                            <img
-                                src="images/card-3.webp"
-                                class="w-full rounded-xl"
-                                alt=""
-                            />
+                            <img src="images/card-3.webp" class="w-full rounded-xl" alt="" />
                         </div>
                         <div class="swiper-slide article-card">
-                            <img
-                                src="images/card-5.webp"
-                                class="w-full rounded-xl"
-                                alt=""
-                            />
+                            <img src="images/card-5.webp" class="w-full rounded-xl" alt="" />
                         </div>
                         <div class="swiper-slide article-card">
-                            <img
-                                src="images/card-6.webp"
-                                class="w-full rounded-xl"
-                                alt=""
-                            />
+                            <img src="images/card-6.webp" class="w-full rounded-xl" alt="" />
                         </div>
                         <div class="swiper-slide article-card">
-                            <img
-                                src="images/card-7.webp"
-                                class="w-full rounded-xl"
-                                alt=""
-                            />
+                            <img src="images/card-7.webp" class="w-full rounded-xl" alt="" />
                         </div>
                         <div class="swiper-slide article-card">
-                            <img
-                                src="images/card-8.webp"
-                                class="w-full rounded-xl"
-                                alt=""
-                            />
+                            <img src="images/card-8.webp" class="w-full rounded-xl" alt="" />
                         </div>
                         <div class="swiper-slide article-card">
-                            <img
-                                src="images/card-9.webp"
-                                class="w-full rounded-xl"
-                                alt=""
-                            />
+                            <img src="images/card-9.webp" class="w-full rounded-xl" alt="" />
                         </div>
                         <div class="swiper-slide article-card">
-                            <img
-                                src="images/card-10.webp"
-                                class="w-full rounded-xl"
-                                alt=""
-                            />
+                            <img src="images/card-10.webp" class="w-full rounded-xl" alt="" />
                         </div>
                     </div>
                     <div class="swiper-scrollbar"></div>
@@ -226,19 +142,14 @@
             <p class="text-xl md:text-3xl text-white font-semibold">
                 More Reason to Join
             </p>
-            <div
-                class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-5 gap-4"
-            >
-                <div
-                    class="p-8 rounded-xl w-full flex flex-col justify-between gap-4 h-fit md:h-[235px] xl:h-[330px]"
-                    style="
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-5 gap-4">
+                <div class="p-8 rounded-xl w-full flex flex-col justify-between gap-4 h-fit md:h-[235px] xl:h-[330px]" style="
                         background: linear-gradient(
                             169deg,
                             rgba(15, 176, 254, 0.25253851540616246) 0%,
                             rgba(255, 0, 0, 0.18531162464985995) 100%
                         );
-                    "
-                >
+                    ">
                     <div class="space-y-4">
                         <p class="text-2xl text-white font-semibold">
                             Enjoy Your TV
@@ -252,16 +163,13 @@
                         <i class="fas fa-tv fa-3x ms-auto"></i>
                     </div>
                 </div>
-                <div
-                    class="p-8 rounded-xl w-full flex flex-col justify-between gap-4 h-fit md:h-[235px] xl:h-[330px]"
-                    style="
+                <div class="p-8 rounded-xl w-full flex flex-col justify-between gap-4 h-fit md:h-[235px] xl:h-[330px]" style="
                         background: linear-gradient(
                             169deg,
                             rgba(15, 176, 254, 0.25253851540616246) 0%,
                             rgba(255, 0, 0, 0.18531162464985995) 100%
                         );
-                    "
-                >
+                    ">
                     <div class="space-y-4">
                         <p class="text-2xl text-white font-semibold">
                             Download your shows to watch offline
@@ -275,16 +183,13 @@
                         <i class="fas fa-download fa-3x ms-auto"></i>
                     </div>
                 </div>
-                <div
-                    class="p-8 rounded-xl w-full flex flex-col justify-between gap-4 h-fit md:h-[235px] xl:h-[330px]"
-                    style="
+                <div class="p-8 rounded-xl w-full flex flex-col justify-between gap-4 h-fit md:h-[235px] xl:h-[330px]" style="
                         background: linear-gradient(
                             169deg,
                             rgba(15, 176, 254, 0.25253851540616246) 0%,
                             rgba(255, 0, 0, 0.18531162464985995) 100%
                         );
-                    "
-                >
+                    ">
                     <div class="space-y-4">
                         <p class="text-2xl text-white font-semibold">
                             Watch everywhere
@@ -298,16 +203,13 @@
                         <i class="fas fa-play fa-3x ms-auto"></i>
                     </div>
                 </div>
-                <div
-                    class="p-8 rounded-xl w-full flex flex-col justify-between gap-4 h-fit md:h-[235px] xl:h-[330px]"
-                    style="
+                <div class="p-8 rounded-xl w-full flex flex-col justify-between gap-4 h-fit md:h-[235px] xl:h-[330px]" style="
                         background: linear-gradient(
                             169deg,
                             rgba(15, 176, 254, 0.25253851540616246) 0%,
                             rgba(255, 0, 0, 0.18531162464985995) 100%
                         );
-                    "
-                >
+                    ">
                     <div class="space-y-4">
                         <p class="text-2xl text-white font-semibold">
                             Create profiles for kids
@@ -327,13 +229,9 @@
 
         <section id="faq" class="container mx-auto my-[100px]">
             <div class="space-y-4">
-                <div
-                    class="collapse bg-secondary rounded-xl hover:bg-[#595959]"
-                >
+                <div class="collapse bg-secondary rounded-xl hover:bg-[#595959]">
                     <input type="radio" name="my-accordion-3" />
-                    <div
-                        class="collapse-title text-lg md:text-xl text-white font-medium py-6 px-6"
-                    >
+                    <div class="collapse-title text-lg md:text-xl text-white font-medium py-6 px-6">
                         What is Netflix
                     </div>
                     <div class="collapse-content">
@@ -349,13 +247,9 @@
                         </p>
                     </div>
                 </div>
-                <div
-                    class="collapse bg-secondary rounded-xl hover:bg-[#595959]"
-                >
+                <div class="collapse bg-secondary rounded-xl hover:bg-[#595959]">
                     <input type="radio" name="my-accordion-3" />
-                    <div
-                        class="collapse-title text-lg md:text-xl text-white font-medium py-6 px-6"
-                    >
+                    <div class="collapse-title text-lg md:text-xl text-white font-medium py-6 px-6">
                         How much does Netflix cost?
                     </div>
                     <div class="collapse-content">
@@ -367,13 +261,9 @@
                         </p>
                     </div>
                 </div>
-                <div
-                    class="collapse bg-secondary rounded-xl hover:bg-[#595959]"
-                >
+                <div class="collapse bg-secondary rounded-xl hover:bg-[#595959]">
                     <input type="radio" name="my-accordion-3" />
-                    <div
-                        class="collapse-title text-lg md:text-xl text-white font-medium py-6 px-6"
-                    >
+                    <div class="collapse-title text-lg md:text-xl text-white font-medium py-6 px-6">
                         Where can I watch?
                     </div>
                     <div class="collapse-content">
@@ -391,13 +281,9 @@
                         </p>
                     </div>
                 </div>
-                <div
-                    class="collapse bg-secondary rounded-xl hover:bg-[#595959]"
-                >
+                <div class="collapse bg-secondary rounded-xl hover:bg-[#595959]">
                     <input type="radio" name="my-accordion-3" />
-                    <div
-                        class="collapse-title text-lg md:text-xl text-white font-medium py-6 px-6"
-                    >
+                    <div class="collapse-title text-lg md:text-xl text-white font-medium py-6 px-6">
                         How do I cancel?
                     </div>
                     <div class="collapse-content">
@@ -410,13 +296,9 @@
                         </p>
                     </div>
                 </div>
-                <div
-                    class="collapse bg-secondary rounded-xl hover:bg-[#595959]"
-                >
+                <div class="collapse bg-secondary rounded-xl hover:bg-[#595959]">
                     <input type="radio" name="my-accordion-3" />
-                    <div
-                        class="collapse-title text-lg md:text-xl text-white font-medium py-6 px-6"
-                    >
+                    <div class="collapse-title text-lg md:text-xl text-white font-medium py-6 px-6">
                         Is Netflix good for kids?
                     </div>
                     <div class="collapse-content">
@@ -439,14 +321,8 @@
                     Ready to watch? Enter your email to create or restart your
                     membership.
                 </p>
-                <div
-                    class="flex flex-col md:flex-row justify-center mt-4 space-x-0 md:space-x-4 space-y-4 md:space-y-0"
-                >
-                    <input
-                        type="text"
-                        class="border border-white/50 rounded-md px-4 py-4 w-full md:w-1/2"
-                        placeholder="Email Address"
-                    />
+                <div class="flex flex-col md:flex-row justify-center mt-4 space-x-0 md:space-x-4 space-y-4 md:space-y-0">
+                    <input type="text" class="border border-white/50 rounded-md px-4 py-4 w-full md:w-1/2" placeholder="Email Address" />
                     <div class="btn btn-primary p-5 h-full">Get Started</div>
                 </div>
             </div>
@@ -459,9 +335,7 @@
                         <span class="underline">123-456-789</span>
                     </p>
                 </div>
-                <div
-                    class="flex flex-wrap flex-col md:flex-row justify-between mt-8 gap-y-4"
-                >
+                <div class="flex flex-wrap flex-col md:flex-row justify-between mt-8 gap-y-4">
                     <ul class="list-none space-y-4">
                         <li>
                             <a href="#" class="text-sm text-white/60 underline">
@@ -557,26 +431,18 @@
                     </ul>
                 </div>
                 <details class="dropdown mt-7">
-                    <summary
-                        class="btn px-4 py-2 border border-white/50 bg-transparent text-white"
-                    >
+                    <summary class="btn px-4 py-2 border border-white/50 bg-transparent text-white">
                         <i class="fa-solid fa-language"></i>
                         Bahasa Indonesia
                     </summary>
-                    <ul
-                        class="menu dropdown-content bg-white rounded-lg z-[1] w-52 p-2 shadow"
-                    >
+                    <ul class="menu dropdown-content bg-white rounded-lg z-[1] w-52 p-2 shadow">
                         <li class="group group-hover:bg-black">
-                            <a
-                                class="group-hover:text-white text-slate-900 group-hover:bg-black/60"
-                            >
+                            <a class="group-hover:text-white text-slate-900 group-hover:bg-black/60">
                                 Bahasa Indonesia
                             </a>
                         </li>
                         <li class="group group-hover:bg-black">
-                            <a
-                                class="group-hover:text-white text-slate-900 group-hover:bg-black/60"
-                            >
+                            <a class="group-hover:text-white text-slate-900 group-hover:bg-black/60">
                                 Bahasa Inggris
                             </a>
                         </li>
@@ -588,4 +454,5 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="app.js"></script>
     </body>
+
 </html>
